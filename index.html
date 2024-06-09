@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Akinloye</a>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li>
+                        <a href="#home" class="nav_link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="nav_link">Work</a>
+                    </li>
+                    <li>
+                        <a href="#info" class="nav_link">My Info</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav_link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav_link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav_close" id="nav_close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+            <!-- Toggle button -->
+            <div class="nav_Toggle" id="nav_Toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <img src="./assets/pelzmagic.jpeg" alt="image" class="home_image">
+                <div class="home_data">
+                    <h1 class="home_name">Akinloye <br /> Oluwapelumi</h1>
+                    <h3 class="home_profession">Software Engineer</h3>
+                </div>
+                <a href="#work" class="home_scroll">
+                    <div class="home_scroll-box">
+                        <i class="ri-arrow-down-line"></i>
+                    </div>
+                    <span class="home_scroll-text">Recent Works</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="work section" id="work">
+            <h2 class="section_title">RECENT WORKS</h2>
+
+            <div class="work_container container grid">
+                <article class="work_card">
+                    <a  href="#" class="work_link" target="_blank">
+                        <h2 class="work_title">Guess game</h2>
+                        <p class="work_description">
+                            This is a guess game that was built with html, css and javascript. The computer generates a random number, and a user is required to guess the exact number in three tries.
+                        </p>
+
+                        <img src="./assets/guess.PNG" alt="image" class="work_image">
+
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+               
+                <article class="work_card">
+                    <a  href="#" class="work_link" target="_blank">
+                        <h2 class="work_title">Intro component with sign up page</h2>
+                        <p class="work_description">
+                            This is a sign up page that was built with html, css and javascript.
+                        </p>
+
+                        <img src="./assets/component.PNG" alt="image" class="work_image">
+
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="work_card">
+                    <a  href="#" class="work_link" target="_blank">
+                        <h2 class="work_title">Fylo Landing Page</h2>
+                        <p class="work_description">
+                            This is a Landing page that was built with html, css and javascript.
+                        </p>
+
+                        <img src="./assets/fylo.PNG" alt="image" class="work_image">
+
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section class="info section" id="info">
+            <h2 class="section_title">MY INFO</h2>
+
+            <div class="info_container container grid">
+                <!-- ABOUT -->
+                <div class="about grid">
+                    <div class="about_content">
+                        <h3 class="info_title">About Me</h3>
+                        <p class="about_description">I am a certified software engineer who is passionate about creating seamless user friendly web experiences. With a strong foundation in HTML, CSS, JAVASCRIPT and it's frameworks like REACT and Vue, I have successfully implemented responsive designs of interactive features that enhance engagements.</p>
+
+                        <a href="./assets/Akinloye's Resume (2).pdf" download="" target="_blank" class="button about_button">Download CV</a>
+                    </div>
+
+                    <img src="./assets/pelzmagic.jpeg" alt="image" class="about_image">
+                </div>
+                    <!-- SKILLS -->
+                <div class="skills">
+                    <h3 class="info_title">Skills</h3>
+                    <div class="skills_content grid">
+                        <div class="skills_box">
+                            <img src="./assets/html-1.svg" alt="image" class="skills_image">
+                            <span class="skills_name">HTML</span>
+                        </div>
+                        <div class="skills_box">
+                            <img src="./assets/css-4.svg" alt="image" class="skills_image">
+                            <span class="skills_name">CSS</span>
+                        </div>
+                        <div class="skills_box">
+                            <img src="./assets/javascript-1.svg" alt="image" class="skills_image">
+                            <span class="skills_name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills_box">
+                            <img src="./assets/github-icon-1.svg" alt="image" class="skills_image">
+                            <span class="skills_name">GITHUB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section_title">CONTACT ME</h2>
+
+            <div class="contact_container container grid">
+                <form action="" class="contact_form grid" id="contact_form">
+                    <div class="contact_group grid">
+                        <input type="text" name="" placeholder="Names" required class="contact_input">
+                        <input type="email" name="" placeholder="Email" required class="contact_input">
+                    </div>
+
+                    <textarea name="" placeholder="Message" required class="contact_input contact_area"></textarea>
+
+                    <button type="submit" class="button contact_button">Send Message</button>
+
+                    <p class="contact_message" id="contact_message">Message</p>
+                </form>
+
+                <div class="contact_social grid">
+                    <a href="#" target="_blank" class="contact_social-link">
+                        <i class="ri-twitter-x-line"></i>
+                        <span>Twitter</span>
+                    </a>
+
+                    <a href="#" target="_blank" class="contact_social-link">
+                        <i class="ri-instagram-line"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js" defer charset="utf-8"></script>
+</body>
+</html>
