@@ -28,3 +28,29 @@ const blurHeader = () => {
                         : header.classList.remove("blur-header");
 }
 window.addEventListener("scroll", blurHeader);
+
+const contactForm = document.getElementById('contact_form');
+const contactMessage = document.getElementById('contact_message');
+
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_51pill8','template_q1ri0bd','#contact_form','bFdVxFAqe6mrSSo2U')
+            .then(() => {
+                contactMessage.textContent = "Message sent successfully"
+
+                setTimeout(() => {
+                    contactMessage.textContent = ''
+                }, 5000)
+
+                contactForm.reset();
+            })
+}
+contactForm.addEventListener('submit', sendEmail);
+
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up');
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);

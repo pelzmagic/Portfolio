@@ -59,7 +59,7 @@
                 </a>
             </div>
         </section>
-
+    </main>
         <section class="work section" id="work">
             <h2 class="section_title">RECENT WORKS</h2>
 
@@ -149,15 +149,15 @@
             <div class="contact_container container grid">
                 <form action="" class="contact_form grid" id="contact_form">
                     <div class="contact_group grid">
-                        <input type="text" name="" placeholder="Names" required class="contact_input">
-                        <input type="email" name="" placeholder="Email" required class="contact_input">
+                        <input type="text" name="to_name" placeholder="Names" required class="contact_input">
+                        <input type="email" name="from_name" placeholder="Email" required class="contact_input">
                     </div>
 
-                    <textarea name="" placeholder="Message" required class="contact_input contact_area"></textarea>
+                    <textarea name="message" placeholder="Message" required class="contact_input contact_area"></textarea>
 
                     <button type="submit" class="button contact_button">Send Message</button>
 
-                    <p class="contact_message" id="contact_message">Message</p>
+                    <p class="contact_message" id="contact_message"></p>
                 </form>
 
                 <div class="contact_social grid">
@@ -173,7 +173,28 @@
                 </div>
             </div>
         </section>
-    </main>
+        <footer class="footer">
+            <div class="footer_container container grid">
+               <ul class="footer_links">
+                <li>
+                    <a href="#home" class="footer_link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer_link">Work</a>
+                </li>
+
+                <li>
+                    <a href="#info" class="footer_link">Info</a>
+                </li>
+               </ul>
+            </div>
+        </footer>
+   
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
     <script src="main.js" defer charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>
