@@ -143,7 +143,6 @@ img {
   cursor: pointer;
 }
 .nav_Toggle {
-  border: 1px solid red;
   display: none;
 }
 
@@ -627,5 +626,17 @@ img {
   }
   .scrollup {
     right: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav_Toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .nav_Toggle {
+    display: block;
   }
 }
